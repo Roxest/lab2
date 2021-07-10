@@ -1,5 +1,11 @@
 const arrayStringify = (input) => {
   /* Your code here */
+  let str = ""
+  input.forEach(addText)
+  function addText(item){
+    str += item
+  }
+  return str
 }
 
 //Test cases
