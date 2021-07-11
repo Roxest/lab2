@@ -1,5 +1,15 @@
 const allInOrNot = (input) => {
   /* Your code here */
+  let chk = true
+  for (let i = 0;i < input.length-1 ; i++){
+    if (typeof input[i] == typeof input[i+1]) {
+      chk = true
+    } else {
+      chk = false
+      return false
+    }
+  }
+  return chk
 }
 
 //Test cases

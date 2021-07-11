@@ -1,5 +1,12 @@
 const cloneMonster = (monster, amount) => {
   /* Your code here */
+  let clones =[]
+  for (i = 0; i<amount ;i++){
+    clones.push(Object.assign({
+      id: i+1,      
+    },monster))
+  } 
+  return clones
 }
 
 //Test cases

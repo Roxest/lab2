@@ -1,5 +1,9 @@
 const showIfSumIsEven = (input) => {
   /* Your code here */
+  const ans = input
+    .map( x => x.reduce((a,b) => a+b))
+    .filter(x => x % 2 === 0)
+  return ans
 }
 
 //Test cases
