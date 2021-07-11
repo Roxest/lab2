@@ -26,7 +26,7 @@ const mafiaWar = (mafias, fights) => {
       strongest.shift()
     }
   }
-  return strongest
+  return edmaf[strongest[0].id-1]
 }
 
 //Test case
